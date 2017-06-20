@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding_0">5dp</dimen>
+    <dimen name="common_padding_1">8dp</dimen>
+    <dimen name="common_padding_2">12dp</dimen>
+    <dimen name="common_padding_3">16dp</dimen>
+    <dimen name="common_padding_4">20dp</dimen>
+
+    <dimen name="flag_grid_view_width">86dp</dimen>
+    <dimen name="flag_grid_view_height">64dp</dimen>
+
+    <dimen name="answer_slot_size">32dp</dimen>
+    <dimen name="answer_slot_top_margin">10dp</dimen>
+    <dimen name="answer_slot_space">20dp</dimen>
+    <dimen name="answer_slot_text">16sp</dimen>
+
+    <dimen name="keyboard_key_width">35dp</dimen>
+    <dimen name="keyboard_key_height">48dp</dimen>
+    <dimen name="keyboard_key_text_size">20sp</dimen>
+
+    <dimen name="flag_image_width">245dp</dimen>
+    <dimen name="flag_image_height">170dp</dimen>
+
+    <dimen name="flag_check_size">20dp</dimen>
+    <dimen name="btn_play_width">120dp</dimen>
+    <dimen name="btn_play_height">70dp</dimen>
+    <dimen name="btn_play_text">20sp</dimen>
+
+    <dimen name="item_level_height">96dp</dimen>
+    <dimen name="item_level_text">26sp</dimen>
+    <dimen name="item_level_sub_text">16sp</dimen>
+    <dimen name="flags_toolbar_text">24sp</dimen>
+    <dimen name="flags_progressbar_height">3dp</dimen>
+    <dimen name="flags_grid_hor_spacing">12dp</dimen>
+    <dimen name="flags_grid_ver_spacing">12dp</dimen>
+    <dimen name="nav_btn_width">32dp</dimen>
+    <dimen name="nav_btn_height">90dp</dimen>
+    <dimen name="flag_check_size_big">30dp</dimen>
+    <dimen name="keyboard_key_spacing">3dp</dimen>
+    <dimen name="clear_btn_size">42dp</dimen>
+    <dimen name="hint_btn_size">32dp</dimen>
+    <dimen name="toolbar_coin_size">26dp</dimen>
+    <dimen name="custom_toast_width">120dp</dimen>
+    <dimen name="custom_toast_height">70dp</dimen>
+    <dimen name="custom_toast_text">24sp</dimen>
+    <dimen name="help_coin_size">18dp</dimen>
+</resources>

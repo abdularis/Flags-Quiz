@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.paperplanes.flagsquiz.activity.FlagsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_flags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/common_padding_3"
+            android:layout_marginEnd="@dimen/common_padding_3"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/text_level_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/common_padding_4"
+                android:textStyle="bold"
+                android:textSize="@dimen/flags_toolbar_text"
+                android:textColor="@android:color/white"
+                android:text="Level 1"/>
+
+            <TextView
+                android:id="@+id/text_answered_flags_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/flags_toolbar_text"
+                android:textColor="@android:color/white"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/flags_toolbar_text"
+                android:textColor="@android:color/white"
+                android:text=" / "/>
+
+            <TextView
+                android:id="@+id/text_flags_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/flags_toolbar_text"
+                android:textColor="@android:color/white"
+                android:text="20"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/progress_level"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/flags_progressbar_height"
+        android:max="1"
+        android:progress="1"
+        android:progressDrawable="@drawable/custom_progressbar"/>
+
+
+    <GridView
+        android:id="@+id/grid_flags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/common_padding_2"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:columnWidth="@dimen/flag_grid_view_width"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="@dimen/flags_grid_hor_spacing"
+        android:verticalSpacing="@dimen/flags_grid_ver_spacing"
+        android:listSelector="@android:color/transparent"
+        tools:listitem="@layout/item_flag"/>
+
+</LinearLayout>

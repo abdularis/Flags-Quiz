@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<descriptor>
+	<level 
+		name="Level 1"
+		file="levels/flags_1.xml"
+		minToUnlock="0"/>
+	<level 
+		name="Level 2"
+		file="levels/flags_2.xml"
+		minToUnlock="17"/>
+	<level 
+		name="Level 3"
+		file="levels/flags_3.xml"
+		minToUnlock="34"/>
+	<level 
+		name="Level 4"
+		file="levels/flags_4.xml"
+		minToUnlock="54"/>
+	<level 
+		name="Level 5"
+		file="levels/flags_5.xml"
+		minToUnlock="74"/>
+	<level 
+		name="Level 6"
+		file="levels/flags_6.xml"
+		minToUnlock="94"/>
+	<level 
+		name="Level 7"
+		file="levels/flags_7.xml"
+		minToUnlock="114"/>
+	<level 
+		name="Level 8"
+		file="levels/flags_8.xml"
+		minToUnlock="134"/>
+	<level 
+		name="Level 9"
+		file="levels/flags_9.xml"
+		minToUnlock="154"/>
+</descriptor>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Flags Quiz</string>
+
+    <string name="wrong">Salah</string>
+    <string name="correct">Benar</string>
+    <string name="play">Play</string>
+    <string name="about">Tentang</string>
+    <string name="about_content">Programming: A. Aris</string>
+    <string name="hint">Petunjuk</string>
+    <string name="help">Bantuan</string>
+    <string name="help_hint_continent">Petunjuk untuk menampilkan benua negara dengan bendera tertentu berada</string>
+    <string name="help_hint_half">Mengisi otomatis setengah dari jawaban</string>
+    <string name="help_hint_full">Mengisi otomatis seluruh jawaban dengan benar dan mendapatkan coins</string>
+    <string name="hint_continent_cost">25</string>
+    <string name="hint_half_cost">100</string>
+    <string name="hint_full_cost">250</string>
+    <string name="hint_info">Setelah petunjuk(hint) dibeli dapat dipakai terus menerus</string>
+    <string name="version_num">v1.0</string>
+</resources>

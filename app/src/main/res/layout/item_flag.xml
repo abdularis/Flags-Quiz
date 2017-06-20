@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_bg_teal">
+
+    <ImageView
+        android:id="@+id/image_item_flag"
+        android:layout_width="@dimen/flag_grid_view_width"
+        android:layout_height="@dimen/flag_grid_view_height"
+        android:src="@drawable/germany"/>
+
+    <ImageView
+        android:id="@+id/image_item_check"
+        android:layout_width="@dimen/flag_check_size"
+        android:layout_height="@dimen/flag_check_size"
+        android:visibility="gone"
+        android:background="@drawable/bg_check"
+        android:src="@drawable/ic_check"/>
+
+</FrameLayout>

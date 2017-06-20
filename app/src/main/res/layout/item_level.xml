@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_level_height"
+    android:paddingBottom="@dimen/common_padding_3"
+    android:paddingRight="@dimen/common_padding_4"
+    android:paddingLeft="@dimen/common_padding_4">
+
+    <LinearLayout
+        android:id="@+id/level_item_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/selector_bg_teal"
+        android:padding="@dimen/common_padding_2">
+
+        <TextView
+            android:id="@+id/text_item_level_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Level 1"
+            android:textStyle="bold"
+            android:textSize="@dimen/item_level_text"/>
+
+        <TextView
+            android:id="@+id/text_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="0/20"
+            android:textSize="@dimen/item_level_sub_text"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:src="@drawable/ic_lock"/>
+
+</FrameLayout>

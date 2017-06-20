@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<flags>
+    <flag>
+        <country>Afganistan</country>
+        <capital>Kabul</capital>
+        <continent>Asia</continent>
+        <image>afghanistan.png</image>
+    </flag>
+    <flag>
+        <country>Austria</country>
+        <capital>Wina</capital>
+        <continent>Eropa</continent>
+        <image>austria.png</image>
+    </flag>
+    <flag>
+        <country>Bahrain</country>
+        <capital>Al-manamah</capital>
+        <continent>Asia (Timur Tengah)</continent>
+        <image>bahrain.png</image>
+    </flag>
+    <flag>
+        <country>Belgia</country>
+        <capital>Brussels</capital>
+        <continent>Eropa</continent>
+        <image>belgium.png</image>
+    </flag>
+    <flag>
+        <country>Brunei</country>
+        <capital>Bandar Seri Begawan</capital>
+        <continent>Asia Tenggara</continent>
+        <image>brunei.png</image>
+    </flag>
+    <flag>
+        <country>Chili</country>
+        <capital>Santiago</capital>
+        <continent>Amerika Selatan</continent>
+        <image>chile.png</image>
+    </flag>
+    <flag>
+        <country>Denmark</country>
+        <capital>Kopenhagen</capital>
+        <continent>Eropa</continent>
+        <image>denmark.png</image>
+    </flag>
+    <flag>
+        <country>Mesir</country>
+        <capital>Cairo</capital>
+        <continent>Afrika</continent>
+        <image>egypt.png</image>
+    </flag>
+    <flag>
+        <country>Hong kong</country>
+        <capital></capital>
+        <continent>Asia</continent>
+        <image>hong_kong.png</image>
+    </flag>
+    <flag>
+        <country>Malaysia</country>
+        <capital>Kuala Lumpur</capital>
+        <continent>Asia Tenggara</continent>
+        <image>malaysia.png</image>
+    </flag>
+    <flag>
+        <country>Monako</country>
+        <capital>Monaco</capital>
+        <continent>Eropa</continent>
+        <image>monaco.png</image>
+    </flag>
+    <flag>
+        <country>Belanda</country>
+        <capital>Amsterdam</capital>
+        <continent>Eropa</continent>
+        <image>netherlands.png</image>
+    </flag>
+    <flag>
+        <country>Arab Saudi</country>
+        <capital>Riyadh</capital>
+        <continent>Asia</continent>
+        <image>saudi_arabia.png</image>
+    </flag>
+    <flag>
+        <country>Singapura</country>
+        <capital>Singapore</capital>
+        <continent>Asia Tenggara</continent>
+        <image>singapore.png</image>
+    </flag>
+    <flag>
+        <country>Swiss</country>
+        <capital>Bern</capital>
+        <continent>Eropa</continent>
+        <image>switzerland.png</image>
+    </flag>
+    <flag>
+        <country>Thailand</country>
+        <capital>Bangkok</capital>
+        <continent>Asia Tenggara</continent>
+        <image>thailand.png</image>
+    </flag>
+    <flag>
+        <country>Turki</country>
+        <capital>Ankara</capital>
+        <continent>Asia</continent>
+        <image>turkey.png</image>
+    </flag>
+    <flag>
+        <country>Ukraina</country>
+        <capital>Kiev</capital>
+        <continent>Eropa</continent>
+        <image>ukraine.png</image>
+    </flag>
+    <flag>
+        <country>Uruguay</country>
+        <capital>Montevideo</capital>
+        <continent>Amerika Selatan</continent>
+        <image>uruguay.png</image>
+    </flag>
+    <flag>
+        <country>Yaman</country>
+        <capital>Sana'a</capital>
+        <continent>Asia (Timur Tengah)</continent>
+        <image>yemen.png</image>
+    </flag>
+</flags>

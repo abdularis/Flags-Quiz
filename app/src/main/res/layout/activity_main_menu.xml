@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.paperplanes.flagsquiz.activity.MainMenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_padding_1"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/btn_enable_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_padding_0"
+            android:onClick="onBtnSoundClick"
+            android:background="@drawable/selector_btn"
+            android:src="@drawable/ic_sound"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_padding_2"
+                android:padding="@dimen/common_padding_0"
+                android:onClick="onBtnHelpClick"
+                android:background="@drawable/selector_btn"
+                android:src="@drawable/ic_help"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_padding_0"
+                android:onClick="onBtnAboutClick"
+                android:background="@drawable/selector_btn"
+                android:src="@drawable/ic_about"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="@dimen/btn_play_width"
+        android:layout_height="@dimen/btn_play_height"
+        android:layout_centerInParent="true"
+        android:onClick="onPlayClick"
+        android:text="@string/play"
+        android:textSize="@dimen/btn_play_text"
+        android:textColor="@android:color/white"
+        android:background="@drawable/selector_bg_orange"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/common_padding_0"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:text="@string/version_num"/>
+
+</RelativeLayout>

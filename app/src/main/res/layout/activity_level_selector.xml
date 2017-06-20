@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.paperplanes.flagsquiz.activity.LevelSelectorActivity">
+
+    <ListView
+        android:id="@+id/list_view_level"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/common_padding_2"
+        android:paddingBottom="@dimen/common_padding_2"
+        android:listSelector="@android:color/transparent"
+        tools:listitem="@layout/item_level"/>
+
+</LinearLayout>

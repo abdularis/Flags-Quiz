@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg"
+    tools:context="com.paperplanes.flagsquiz.activity.FlagQuizActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <LinearLayout
+            android:id="@+id/layout_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_padding_4"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/toolbar_coin_size"
+                android:layout_height="@dimen/toolbar_coin_size"
+                android:layout_marginRight="@dimen/common_padding_0"
+                android:src="@drawable/ic_coin"/>
+
+            <TextView
+                android:id="@+id/text_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/flags_toolbar_text"
+                android:text="0"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_continent_hint"
+            android:layout_width="@dimen/hint_btn_size"
+            android:layout_height="@dimen/hint_btn_size"
+            android:layout_marginRight="@dimen/common_padding_3"
+            android:background="@drawable/selector_btn"
+            android:onClick="onBtnHintContinentClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_world"/>
+
+        <ImageButton
+            android:id="@+id/btn_half_answer_hint"
+            android:layout_width="@dimen/hint_btn_size"
+            android:layout_height="@dimen/hint_btn_size"
+            android:layout_marginRight="@dimen/common_padding_3"
+            android:background="@drawable/selector_btn"
+            android:onClick="onBtnHintHalfClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_half"/>
+
+        <ImageButton
+            android:id="@+id/btn_full_answer_hint"
+            android:layout_width="@dimen/hint_btn_size"
+            android:layout_height="@dimen/hint_btn_size"
+            android:background="@drawable/selector_btn"
+            android:onClick="onBtnHintFullClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_full_answer"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <ImageButton
+                android:id="@+id/btn_clear"
+                android:layout_width="@dimen/clear_btn_size"
+                android:layout_height="@dimen/clear_btn_size"
+                android:layout_marginRight="@dimen/common_padding_0"
+                android:background="@drawable/selector_btn"
+                android:onClick="onBtnClearClick"
+                android:src="@drawable/ic_clear"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_quiz"
+        android:layout_marginTop="@dimen/common_padding_1"
+        android:layout_marginBottom="@dimen/common_padding_2">
+
+        <ImageButton
+            android:id="@+id/btn_previous"
+            android:layout_width="@dimen/nav_btn_width"
+            android:layout_height="@dimen/nav_btn_height"
+            android:layout_centerVertical="true"
+            android:onClick="onBtnPreviousClick"
+            android:background="@drawable/selector_btn"
+            android:src="@drawable/ic_previous"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_round">
+
+            <ImageView
+                android:id="@+id/image_flag"
+                android:layout_width="@dimen/flag_image_width"
+                android:layout_height="@dimen/flag_image_height"
+                android:padding="@dimen/common_padding_0"
+                android:adjustViewBounds="true"
+                android:src="@drawable/germany"/>
+
+            <ImageView
+                android:id="@+id/image_check"
+                android:layout_width="@dimen/flag_check_size_big"
+                android:layout_height="@dimen/flag_check_size_big"
+                android:visibility="gone"
+                android:background="@drawable/bg_check"
+                android:src="@drawable/ic_check"/>
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/nav_btn_width"
+            android:layout_height="@dimen/nav_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onBtnNextClick"
+            android:background="@drawable/selector_btn"
+            android:src="@drawable/ic_next"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutNav"
+        android:layout_marginTop="@dimen/common_padding_1"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment_slots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.paperplanes.flagsquiz.fragment.AnswerSlotFragment"
+            tools:layout="@layout/fragment_answer_slot"/>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:name="com.paperplanes.flagsquiz.fragment.KeyboardFragment"
+        tools:layout="@layout/fragment_keyboard"/>
+
+</RelativeLayout>
