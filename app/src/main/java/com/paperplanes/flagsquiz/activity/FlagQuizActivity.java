@@ -243,7 +243,7 @@ public class FlagQuizActivity extends FullscreenActivity
                 }
 
                 String half = hint.getHalfName().toUpperCase();
-
+                mKeyboardFragment.showKeys(mAnswerSlotFragment.clearSlot());
                 for (int i = 0; i < half.length(); i++) {
                     KeyboardArray.Key key = mKeyboardFragment.getKey(half.charAt(i));
                     if (key != null) {
@@ -267,7 +267,7 @@ public class FlagQuizActivity extends FullscreenActivity
                 }
 
                 String half = hint.getFullAnswer().toUpperCase();
-
+                mKeyboardFragment.showKeys(mAnswerSlotFragment.clearSlot());
                 for (int i = 0; i < half.length(); i++) {
                     KeyboardArray.Key key = mKeyboardFragment.getKey(half.charAt(i));
                     if (key != null) {

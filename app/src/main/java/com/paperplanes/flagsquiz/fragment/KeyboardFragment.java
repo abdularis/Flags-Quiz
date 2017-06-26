@@ -18,6 +18,7 @@ import com.paperplanes.flagsquiz.core.KeyboardArray;
 import com.paperplanes.flagsquiz.core.SoundManager;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by abdularis on 01/05/17.
@@ -121,6 +122,12 @@ public class KeyboardFragment extends Fragment {
             Animator anim = AnimatorInflater.loadAnimator(getActivity(), R.animator.zoom_in_fade_in);
             anim.setTarget(btnKey);
             anim.start();
+        }
+    }
+
+    public void showKeys(List<KeyboardArray.Key> keys) {
+        for (KeyboardArray.Key key : keys) {
+            showKey(key);
         }
     }
 
